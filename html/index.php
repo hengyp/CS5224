@@ -391,6 +391,15 @@ function initMap() {
   
   				marker.setMap(map);
 
+				
+
+          }, showError
+          );
+        } else {
+          	// Browser doesn't support Geolocation
+        		document.getElementById("googleMap").innerHTML = "Geolocation is not supported by this browser.";
+        }
+
 				var image='w3images/blue_Marker.png';
 
 <?php
@@ -427,14 +436,7 @@ $request = new HTTP_Request2('http://52.220.214.10:8080/ParkSpot/api/carpark/lis
 	}
 
 ?>
-				
 
-          }, showError
-          );
-        } else {
-          	// Browser doesn't support Geolocation
-        		document.getElementById("googleMap").innerHTML = "Geolocation is not supported by this browser.";
-        }
 
 }
 
