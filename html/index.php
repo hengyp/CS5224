@@ -435,29 +435,29 @@ function initMap() {
         
         
 
-        //if (navigator.geolocation) {
-        //  navigator.geolocation.getCurrentPosition(function(position) {
-        //    var pos = {
-        //      lat: position.coords.latitude,
-        //      lng: position.coords.longitude
-        //    };
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
 
 
-  			//	var marker = new google.maps.Marker({
-    		//		position: pos,
-    		//		map:map,title:"You are here!"
-  			//	});
+  				var marker = new google.maps.Marker({
+    				position: pos,
+    				map:map,title:"You are here!"
+  				});
   
-  			//	marker.setMap(map);
+  				marker.setMap(map);
 
 				
 
-         // }, showError
-         // );
-        //} else {
+          }, showError
+          );
+        } else {
           	// Browser doesn't support Geolocation
-        	//	document.getElementById("googleMap").innerHTML = "Geolocation is not supported by this browser.";
-        //}
+        		document.getElementById("googleMap").innerHTML = "Geolocation is not supported by this browser.";
+        }
 
 				var image='w3images/blue_Marker.png';
 
@@ -542,7 +542,7 @@ function w3_close() {
     mySidenav.style.display = "none";
 }
 </script>
-<script  defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmVc-BGCJYox6qRnxX_iOItBIotCj8pRQ&libraries=places&callback=initMap"></script>
+<script async  defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmVc-BGCJYox6qRnxX_iOItBIotCj8pRQ&libraries=places&callback=initMap"></script>
 
 </body>
 </html>
