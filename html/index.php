@@ -435,31 +435,29 @@ function initMap() {
         
         
 
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(function(position) {
-            var pos = {
-              lat: position.coords.latitude,
-              lng: position.coords.longitude
-            };
+        //if (navigator.geolocation) {
+        //  navigator.geolocation.getCurrentPosition(function(position) {
+        //    var pos = {
+        //      lat: position.coords.latitude,
+        //      lng: position.coords.longitude
+        //    };
 
-            //map.setCenter(pos);
 
-  				var marker = new google.maps.Marker({
-    				position: pos,
-    				map:map,title:"You are here!"
-  				});
+  			//	var marker = new google.maps.Marker({
+    		//		position: pos,
+    		//		map:map,title:"You are here!"
+  			//	});
   
-  
-  				marker.setMap(map);
+  			//	marker.setMap(map);
 
 				
 
-          }, showError
-          );
-        } else {
+         // }, showError
+         // );
+        //} else {
           	// Browser doesn't support Geolocation
-        		document.getElementById("googleMap").innerHTML = "Geolocation is not supported by this browser.";
-        }
+        	//	document.getElementById("googleMap").innerHTML = "Geolocation is not supported by this browser.";
+        //}
 
 				var image='w3images/blue_Marker.png';
 
