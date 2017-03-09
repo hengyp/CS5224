@@ -432,7 +432,11 @@ function initMap() {
           map.fitBounds(bounds);
         });
         
-        
+
+
+		google.maps.event.addListener(map, 'click', function( event ){
+  			alert( "Latitude: "+event.latLng.lat()+" "+", longitude: "+event.latLng.lng() ); 
+			});        
         
 
         if (navigator.geolocation) {
