@@ -26,10 +26,14 @@ body, html {
 <body>
 
 <!-- Navbar (sit on top) -->
+
+<!--
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card-2" id="myNavbar">
     <a href="#home" class="w3-bar-item w3-button w3-wide">ParkSpot</a>
+-->
     <!-- Right-sided navbar links -->
+<!--
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
       <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
@@ -37,17 +41,21 @@ body, html {
       <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
       <a href="#googleMap" class="w3-bar-item w3-button"><i class="fa fa-map"></i> MAP</a>
-      
+     
     </div>
+-->
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
+<!--
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars w3-padding-right w3-padding-left"></i>
     </a>
   </div>
 </div>
 
+-->
+
 <!-- Sidenav on small screens when clicking the menu icon -->
+<!--
 <nav class="w3-sidenav w3-black w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidenav">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-large w3-padding-16">Close Ã—</a>
   <a href="#about" onclick="w3_close()">ABOUT</a>
@@ -57,8 +65,13 @@ body, html {
   <a href="#contact" onclick="w3_close()">CONTACT</a>
   <a href="#googleMap" onclick="w3_close()">MAP</a>
 </nav>
+-->
+
 
 <!-- Header with full-height image -->
+
+<!--
+
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-left w3-padding-xxlarge w3-text-white">
     <span class="w3-jumbo w3-hide-small">Start to enjoy your ride</span><br>
@@ -75,7 +88,12 @@ body, html {
   </div>
 </header>
 
+-->
+
 <!-- About Section -->
+
+<!--
+
 <div class="w3-container w3-padding-128" id="about">
   <h3 class="w3-center">ABOUT THE COMPANY</h3>
   <p class="w3-center w3-large">Key features of our company</p>
@@ -103,7 +121,12 @@ body, html {
   </div>
 </div>
 
+->
+
 <!-- Promo Section - "We know design" -->
+
+<!--
+
 <div class="w3-container w3-light-grey w3-padding-64">
   <div class="w3-row-padding">
     <div class="w3-col m6">
@@ -117,7 +140,12 @@ body, html {
   </div>
 </div>
 
+-->
+
 <!-- Team Section -->
+
+<!--
+
 <div class="w3-container w3-padding-128" id="team">
   <h3 class="w3-center">THE TEAM</h3>
   <p class="w3-center w3-large">The ones who runs this company</p>
@@ -169,7 +197,12 @@ body, html {
   </div>
 </div>
 
+-->
+
 <!-- Promo Section "Statistics" -->
+
+<!--
+
 <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
   <div class="w3-quarter">
     <span class="w3-xxlarge">14+</span>
@@ -189,7 +222,13 @@ body, html {
   </div>
 </div>
 
+
+-->
+
 <!-- Work Section -->
+
+<!--
+
 <div class="w3-container w3-padding-128" id="work">
   <h3 class="w3-center">OUR WORK</h3>
   <p class="w3-center w3-large">What we've done for people</p>
@@ -225,7 +264,13 @@ body, html {
   </div>
 </div>
 
+
+-->
+
+
 <!-- Modal for full size images on click-->
+<!--
+
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image">Ã—</span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
@@ -234,7 +279,14 @@ body, html {
   </div>
 </div>
 
+
+-->
+
+
 <!-- Skills Section -->
+
+<!--
+
 <div class="w3-container w3-light-grey w3-padding-64">
   <div class="w3-row-padding">
     <div class="w3-col m6">
@@ -261,7 +313,12 @@ body, html {
   </div>
 </div>
 
+-->
+
 <!-- Pricing Section -->
+
+<!--
+
 <div class="w3-container w3-padding-128 w3-center w3-dark-grey" id="pricing">
   <h3>PRICING</h3>
   <p class="w3-large">Choose a pricing plan that fits your needs.</p>
@@ -317,7 +374,12 @@ body, html {
   </div>
 </div>
 
+-->
+
 <!-- Contact Section -->
+
+<!--
+
 <div class="w3-container w3-padding-128 w3-light-grey" id="contact">
   <h3 class="w3-center">CONTACT</h3>
   <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
@@ -340,15 +402,27 @@ body, html {
       </form>
     </div>
     <div class="w3-half">
+    -->
       <!-- Add Google Maps -->
+	 <!--    
     </div>
   </div>
 </div>
 
+-->
+
+<div class="w3-bar w3-black">
+    <a class="w3-bar-item w3-button w3-wide">ParkSpot</a>
+</div>
+<div class="w3-container">
    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
  
       <div id="googleMap" style="width:100%;height:700px;"></div>
+</div>
+
 <!-- Footer -->
+<!--
+
 <footer class="w3-center w3-black w3-padding-64">
   <a href="#home" class="w3-button"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
@@ -360,6 +434,8 @@ body, html {
   </div>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
+
+--> 
  
 <!-- Add Google Maps -->
 <script>
@@ -546,7 +622,7 @@ function w3_close() {
     mySidenav.style.display = "none";
 }
 </script>
-<script async  defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmVc-BGCJYox6qRnxX_iOItBIotCj8pRQ&libraries=places&callback=initMap"></script>
+<script  async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmVc-BGCJYox6qRnxX_iOItBIotCj8pRQ&libraries=places&callback=initMap"></script>
 
 </body>
 </html>
