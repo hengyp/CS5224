@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html>
 <title>ParkSpot.com</title>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+<!--
+
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+-->
+
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 body, html {
     height: 100%;
-    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+
 }
 
-div#googleMap {
-  width: 100%; height: 100%;
+
+.header {
+    background-color: #000000;
+    color: #ffffff;
 }
+
+
 
 <!--
 /* Full height image header */
@@ -421,20 +438,24 @@ div#googleMap {
 </div>
 
 -->
-
+<!--
 <div class="w3-bar w3-black">
     <a class="w3-bar-item w3-button w3-wide">ParkSpot</a>
 </div>
+-->
 
-<div class="w3-container">
-   <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+<div class="header">
+    <h3>ParkSpot</h3>
+</div>
+
+
+<input id="pac-input" class="controls" type="text" placeholder="Search Box">
 <!-- 
       <div id="googleMap" style="width:100%;height:700px;"></div>
 -->
 
-      <div id="googleMap" style="width:100%; height:700px;"></div>
+      <div id="googleMap" style="height:90%; padding:0px"></div>
 
-</div>
 
 <!-- Footer -->
 <!--
