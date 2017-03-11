@@ -12,6 +12,12 @@ body, html {
     height: 100%;
     line-height: 1.8;
 }
+
+div#googleMap {
+  width: 100%; height: 100%;
+}
+
+<!--
 /* Full height image header */
 .bgimg-1 {
     background-position: center;
@@ -19,6 +25,11 @@ body, html {
     background-image: url("/w3images/parking.png");
     min-height: 100%;
 }
+
+-->
+
+
+
 .w3-bar .w3-button {
     padding: 16px;
 }
@@ -414,10 +425,15 @@ body, html {
 <div class="w3-bar w3-black">
     <a class="w3-bar-item w3-button w3-wide">ParkSpot</a>
 </div>
+
 <div class="w3-container">
    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
- 
+<!-- 
       <div id="googleMap" style="width:100%;height:700px;"></div>
+-->
+
+      <div id="googleMap" style="width:100%; height:700px;"></div>
+
 </div>
 
 <!-- Footer -->
@@ -443,7 +459,7 @@ body, html {
 function initMap() {
 
   var mapOptions= {
-    center: {lat: 1.3437459, lng: 103.8240449},
+    center: {lat: 1.362524578086153, lng: 103.81702423095703},
     zoom:12, scrollwheel: false, draggable: true,
     mapTypeId:google.maps.MapTypeId.ROADMAP
   };
