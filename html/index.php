@@ -58,7 +58,7 @@ body, html {
 <!--
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card-2" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">ParkSpot</a>
+    <a href="#home" class="w3-bar-item w3-button w3-wide">ParkSpot.test</a>
 -->
     <!-- Right-sided navbar links -->
 <!--
@@ -445,7 +445,7 @@ body, html {
 -->
 
 <div class="header">
-    <h3>ParkSpot</h3>
+    <h3>ParkSpot_test</h3>
 </div>
 
 
