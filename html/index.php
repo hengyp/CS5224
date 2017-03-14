@@ -481,7 +481,7 @@ function initMap() {
 
   var mapOptions= {
     center: {lat: 1.362524578086153, lng: 103.81702423095703},
-    zoom:12, scrollwheel: false, draggable: true,
+    zoom:12, scrollwheel: true, draggable: true,
     mapTypeId:google.maps.MapTypeId.ROADMAP
   };
 
