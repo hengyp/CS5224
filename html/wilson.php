@@ -509,12 +509,6 @@ function initMap() {
             return;
           }
           
-          //popup above location
-  			var infowindow = new google.maps.InfoWindow({
-    			content: "Hello World!"
-  			});
-  			infowindow.open(map,marker);
-
           // Clear out the old markers.
           markers.forEach(function(marker) {
             marker.setMap(null);
