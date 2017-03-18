@@ -495,6 +495,9 @@ function initMap() {
         map.addListener('bounds_changed', function() {
           searchBox.setBounds(map.getBounds());
         });
+        
+        
+        google.maps.event.addListener(map, "center_changed", function() { alert(map.getCenter().lat().toString().concat(", ").concat(map.getCenter().lng().toString())); });
 
         var markers = [];
         // Listen for the event fired when the user selects a prediction and retrieve
@@ -542,7 +545,12 @@ function initMap() {
               bounds.extend(place.geometry.location);
             }
           });
+          
           map.fitBounds(bounds);
+                   
+          
+          
+          
         });
         
 
