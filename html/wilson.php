@@ -506,12 +506,13 @@ function initMap() {
           var places = searchBox.getPlaces()
 
           if (places.length == 0) {
-            return;
-            //popup above location
+          	//popup above location
   				var infowindow2 = new google.maps.InfoWindow2({
     				content: "Hello World!"
   				});
   				infowindow2.open(map,marker);
+            return;
+
           }
           
 
