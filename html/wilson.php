@@ -509,11 +509,19 @@ function initMap() {
             return;
           }
           
+
+		
           // Clear out the old markers.
           markers.forEach(function(marker) {
             marker.setMap(null);
           });
           markers = [];
+
+         //popup above location
+  			var infowindow = new google.maps.InfoWindow({
+    			content: "Hello World!"
+  			});
+  			infowindow.open(map,marker);
 
           // For each place, get the icon, name and location.
           var bounds = new google.maps.LatLngBounds();
