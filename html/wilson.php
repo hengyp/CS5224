@@ -572,8 +572,14 @@ function initMap() {
     				position: pos,
     				map:map,title:"You are here!"
   				});
-  
   				marker.setMap(map);
+  				
+  				var infowindow = new google.maps.InfoWindow({
+   				content: "Hello World!"
+  				});
+  				infowindow.open(map,marker);
+  
+  				
 
 				
 
