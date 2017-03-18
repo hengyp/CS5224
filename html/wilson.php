@@ -500,22 +500,23 @@ function initMap() {
         google.maps.event.addListener(map, "center_changed", function() { alert(map.getCenter().lat().toString().concat(", ").concat(map.getCenter().lng().toString())); });
 
         var markers = [];
+        
+        //popup above location
+  			var infowindow2 = new google.maps.InfoWindow2({
+    			content: "Hello World!"
+  				});
+  				infowindow2.open(map,marker);
+  				
         // Listen for the event fired when the user selects a prediction and retrieve
         // more details for that place.
         searchBox.addListener('places_changed', function() {
           var places = searchBox.getPlaces()
 
           if (places.length == 0) {
-          	//popup above location
-  				var infowindow2 = new google.maps.InfoWindow2({
-    				content: "Hello World!"
-  				});
-  				infowindow2.open(map,marker);
             return;
 
           }
           
-
 		
           // Clear out the old markers.
           markers.forEach(function(marker) {
