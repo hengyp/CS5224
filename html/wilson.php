@@ -505,11 +505,13 @@ function initMap() {
         searchBox.addListener('places_changed', function() {
           var places = searchBox.getPlaces()
 
-			//popup above location
-  			var infowindow = new google.maps.InfoWindow({
+         //popup above location
+  			var infowindow2 = new google.maps.InfoWindow2({
     			content: "Hello World!"
   			});
-  			infowindow.open(map,marker);
+  			infowindow2.open(map,marker);
+
+
 
           if (places.length == 0) {
             return;
@@ -522,8 +524,6 @@ function initMap() {
             marker.setMap(null);
           });
           markers = [];
-
-
 
           // For each place, get the icon, name and location.
           var bounds = new google.maps.LatLngBounds();
