@@ -484,6 +484,8 @@ function initMap() {
     zoom:12, scrollwheel: true, draggable: true,
     mapTypeId:google.maps.MapTypeId.ROADMAP
   };
+  
+  var infoCenter=0;
 
    var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
         var input = document.getElementById('pac-input');
@@ -494,10 +496,21 @@ function initMap() {
         // Bias the SearchBox results towards current map's viewport.
         map.addListener('bounds_changed', function() {
           searchBox.setBounds(map.getBounds());
+
+
         });
+
         
         
-        google.maps.event.addListener(map, "center_changed", function() { alert(map.getCenter().lat().toString().concat(", ").concat(map.getCenter().lng().toString())); });
+        google.maps.event.addListener(map, "center_changed", function() {
+        	
+        		if(infoCenter==1){ 
+        
+        			alert(map.getCenter().lat().toString().concat(", ").concat(map.getCenter().lng().toString()).concat("*"));
+        			infoCenter=0; 
+        		};
+        		
+        	});
 
         var markers = [];
         // Listen for the event fired when the user selects a prediction and retrieve
@@ -508,6 +521,9 @@ function initMap() {
           if (places.length == 0) {
             return;
           }
+
+          infoCenter=1;
+
 
           // Clear out the old markers.
           markers.forEach(function(marker) {
@@ -550,14 +566,8 @@ function initMap() {
                    
           
           
-          
         });
         
-
-
-		google.maps.event.addListener(map, 'click', function( event ){
-  			alert( "Latitude: "+event.latLng.lat()+" "+", longitude: "+event.latLng.lng() ); 
-			});        
         
 
         if (navigator.geolocation) {
