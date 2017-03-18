@@ -503,18 +503,17 @@ function initMap() {
         // Listen for the event fired when the user selects a prediction and retrieve
         // more details for that place.
         searchBox.addListener('places_changed', function() {
-          var places = searchBox.getPlaces();
-
-			//note balloon
-  			var infowindow = new google.maps.InfoWindow({
-    			content: "Hello World!"
-  			});
-  			infowindow.open(map,marker);
-
+          var places = searchBox.getPlaces()
 
           if (places.length == 0) {
             return;
           }
+          
+          //popup above location
+  			var infowindow = new google.maps.InfoWindow({
+    			content: "Hello World!"
+  			});
+  			infowindow.open(map,marker);
 
           // Clear out the old markers.
           markers.forEach(function(marker) {
