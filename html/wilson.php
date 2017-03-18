@@ -577,12 +577,17 @@ function initMap() {
   				});
   				marker.setMap(map);
   				
+  				//Balloon popup
   				var infowindow = new google.maps.InfoWindow({
    				content: "Hello World!"
   				});
   				infowindow.open(map,marker);
   
-  				
+  				//Zoom in on click
+  				google.maps.event.addListener(marker,'click',function() {
+  					map.setZoom(9);
+  					map.setCenter(marker.getPosition());
+  				});
 
 				
 
@@ -624,11 +629,6 @@ $request = new HTTP_Request2('http://52.220.214.10:8080/ParkSpot/api/carpark/lis
   				});
 
 				marker.setMap(map);
-				
-				var infowindow = new google.maps.InfoWindow({
-   				content: "Hello World!"
-  				});
-  				infowindow.open(map,marker);
 				
 				marker.addListener("click", function(){
 					alert("' . $ar3['development'] . ', ' . $ar3['lots'] . ', ' . '$'. $ar3['price'] .    '");
