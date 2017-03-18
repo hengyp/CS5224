@@ -501,12 +501,6 @@ function initMap() {
 
         var markers = [];
         
-        //popup above location
-  			var infowindow2 = new google.maps.InfoWindow2({
-    			content: "Hello World!"
-  				});
-  				infowindow2.open(map,marker);
-  				
         // Listen for the event fired when the user selects a prediction and retrieve
         // more details for that place.
         searchBox.addListener('places_changed', function() {
