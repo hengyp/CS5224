@@ -505,16 +505,13 @@ function initMap() {
         searchBox.addListener('places_changed', function() {
           var places = searchBox.getPlaces()
 
-         //popup above location
-  			var infowindow2 = new google.maps.InfoWindow2({
-    			content: "Hello World!"
-  			});
-  			infowindow2.open(map,marker);
-
-
-
           if (places.length == 0) {
             return;
+            //popup above location
+  				var infowindow2 = new google.maps.InfoWindow2({
+    				content: "Hello World!"
+  				});
+  				infowindow2.open(map,marker);
           }
           
 
