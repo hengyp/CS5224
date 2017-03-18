@@ -585,7 +585,7 @@ function initMap() {
   
   				//Zoom in on click
   				google.maps.event.addListener(marker,'click',function() {
-  					map.setZoom(9);
+  					map.setZoom(15);
   					map.setCenter(marker.getPosition());
   				});
 
