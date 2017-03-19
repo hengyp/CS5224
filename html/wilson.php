@@ -495,17 +495,23 @@ function initMap() {
         map.addListener('bounds_changed', function() {
           searchBox.setBounds(map.getBounds());
         });
+        
+        
+        google.maps.event.addListener(map, "center_changed", function() { alert(map.getCenter().lat().toString().concat(", ").concat(map.getCenter().lng().toString())); });
 
         var markers = [];
+        
         // Listen for the event fired when the user selects a prediction and retrieve
         // more details for that place.
         searchBox.addListener('places_changed', function() {
-          var places = searchBox.getPlaces();
+          var places = searchBox.getPlaces()
 
           if (places.length == 0) {
             return;
-          }
 
+          }
+          
+		
           // Clear out the old markers.
           markers.forEach(function(marker) {
             marker.setMap(null);
@@ -542,7 +548,12 @@ function initMap() {
               bounds.extend(place.geometry.location);
             }
           });
+          
           map.fitBounds(bounds);
+                   
+          
+          
+          
         });
         
 
@@ -564,10 +575,26 @@ function initMap() {
     				position: pos,
     				map:map,title:"You are here!"
   				});
-  
   				marker.setMap(map);
+  				
+  				//Balloon popup
+  				var infowindow = new google.maps.InfoWindow({
+   				content: "Hello World!"
+  				});
+  				infowindow.open(map,marker);
+  
+  				//Zoom in on click
+  				google.maps.event.addListener(marker,'click',function() {
+  					map.setZoom(16);
+  					map.setCenter(marker.getPosition());
+  				});
 
-				
+				google.maps.event.addListener(marker,'click',function() {
+    				var infowindow = new google.maps.InfoWindow({
+      				content:"Hello World!"
+    			});
+  				infowindow.open(map,marker);
+  				});
 
           }, showError
           );
@@ -602,16 +629,24 @@ $request = new HTTP_Request2('http://52.220.214.10:8080/ParkSpot/api/carpark/lis
   				echo 'var marker = new google.maps.Marker({
     			position: {lat: ' . $ar3['latitude'] . ', lng: ' . $ar3['longitude'] . '},
     			map:map,
-    			title:"' . $ar3['development'] . ', ' . $ar3['lots'] . '",
+    			title:"' . $ar3['development'] . ', ' . $ar3['lots'] . ', ' . '$'. $ar3['price'] . '",
     			icon: image
   				});
 
-				marker.setMap(map);';
+				marker.setMap(map);
+				
+				marker.addListener("click", function(){
+					alert("' . $ar3['development'] . ', ' . $ar3['lots'] . ', ' . '$'. $ar3['price'] .    '");
+				});
+				
+				';
 			}
 
 	}
 
 ?>
+
+
 
 
 }
@@ -623,7 +658,7 @@ function showError(error) {
             document.getElementById("googleMap").innerHTML = "User denied the request for Geolocation."
             break;
         case error.POSITION_UNAVAILABLE:
-            document.getElementById("googleMap").innerHTML = "Location information is unavailable."
+            //document.getElementById("googleMap").innerHTML = "Location information is unavailable."
             break;
         case error.TIMEOUT:
             document.getElementById("googleMap").innerHTML = "The request to get user location timed out."
