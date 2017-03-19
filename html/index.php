@@ -618,6 +618,8 @@ $request = new HTTP_Request2('http://52.220.214.10:8080/ParkSpot/api/carpark/lis
 				
 					
 				$carPark = preg_replace("~[^a-z0-9 ]~i", "", $ar3['development']); 
+
+				//Have to sanitize as the values contain illegal values!
 	 
   				echo 'var marker' . $index . ' = new google.maps.Marker({
     			position: {lat: ' . $ar3['latitude'] . ', lng: ' . $ar3['longitude'] . '},
