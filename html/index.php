@@ -150,9 +150,22 @@ function initMap() {
         			document.getElementById("googleMap").innerHTML = "Geolocation is not supported by this browser.";
         	}
 
-			var image={
+			var imageBlue={
 				url: 'w3images/blue_Marker.png'
 			};
+			
+			var imageBrown={
+				url: 'w3images/brown_Marker.png'
+			};
+			
+			var imageGreen={
+				url: 'w3images/green_Marker.png'
+			};
+
+			var imageOrange={
+				url: 'w3images/orange_Marker.png'
+			};
+
 
 <?php
 
@@ -176,13 +189,27 @@ function initMap() {
   				echo 'var marker' . $index . ' = new google.maps.Marker({
     			position: {lat: ' . $ar3['latitude'] . ', lng: ' . $ar3['longitude'] . '},
     			map:map,
-    			title:"' . $ar3['development'] . ', ' . $ar3['lots'] . ', ' . '$'. $ar3['price'] . '",
-    			icon: image
+    			title:"' . $ar3['development'] . ', ' . $ar3['lots'] . ', ' . '$'. $ar3['price'] . ",". $ar3['carParkOwner'] .'",
+    			icon: ';
+    			
+				if ($ar3['carParkOwner'] == 'URA') {
+					echo 'imageBlue';				
+				} else if ($ar3['carParkOwner'] == 'HDB'){
+					echo 'imageGreen';
+				} else if ($ar3['carParkOwner'] == 'LTA'){
+					echo 'imageOrange';
+				}
+				
+				else {
+					echo 'imageBrown';				
+				}
+    			
+    			echo '
   				});
 
 				marker' . $index . '.setMap(map);
 			
-				var contentString' . $index . '=\'<div style="color:#000000"><h1>' . $carPark .'</h1><h3>Lots available =' . $ar3["lots"] .'</h3><h3>Price = $' . $ar3["price"] . '</h3> <button type="button">Book Now!</button> </div>\';
+				var contentString' . $index . '=\'<div style="color:#000000"><h1>' . $carPark .'</h1><h3>Lots available =' . $ar3["lots"] .'</h3><h3>Price = $' . $ar3["price"] . '</h3><h3>' . $ar3["carParkOwner"] . '</h3> <button type="button">Book Now!</button> </div>\';
 				
 				var infowindow' . $index . ' = new google.maps.InfoWindow({
     					content: contentString' . $index . '
