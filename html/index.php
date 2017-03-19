@@ -615,22 +615,36 @@ $request = new HTTP_Request2('http://52.220.214.10:8080/ParkSpot/api/carpark/lis
 			{
 
 				$ar3=(array)$ar2[$index];
-
+				
+					
+				$carPark = preg_replace("~[^a-z0-9 ]~i", "", $ar3['development']); 
 	 
-  				echo 'var marker = new google.maps.Marker({
+  				echo 'var marker' . $index . ' = new google.maps.Marker({
     			position: {lat: ' . $ar3['latitude'] . ', lng: ' . $ar3['longitude'] . '},
     			map:map,
     			title:"' . $ar3['development'] . ', ' . $ar3['lots'] . ', ' . '$'. $ar3['price'] . '",
     			icon: image
   				});
 
-				marker.setMap(map);
+				marker' . $index . '.setMap(map);
+			
+			
+				var contentString' . $index . '=\'<div style="color:#000000"><h1>' . $carPark .'</h1><h3>Lots available =' . $ar3["lots"] .'</h3><h3>Price = $' . $ar3["price"] . '</h3></div>\';
 				
-				marker.addListener("click", function(){
-					alert("' . $ar3['development'] . ', ' . $ar3['lots'] . ', ' . '$'. $ar3['price'] .    '");
+				var infowindow' . $index . ' = new google.maps.InfoWindow({
+    					content: contentString' . $index . '
+  				});
+
+				
+				marker' . $index . '.addListener("click", function(){
+					//alert("' . $ar3['development'] . ', ' . $ar3['lots'] . ', ' . '$'. $ar3['price'] .    '");
+					infowindow' . $index . '.open(map, marker' .$index. ');
+
 				});
 				
 				';
+				
+								
 			}
 
 	}
@@ -660,30 +674,7 @@ function showError(error) {
     }
 }
 
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
 
-
-// Toggle between showing and hiding the sidenav when clicking the menu icon
-var mySidenav = document.getElementById("mySidenav");
-
-function w3_open() {
-    if (mySidenav.style.display === 'block') {
-        mySidenav.style.display = 'none';
-    } else {
-        mySidenav.style.display = 'block';
-    }
-}
-
-// Close the sidenav with the close button
-function w3_close() {
-    mySidenav.style.display = "none";
-}
 </script>
 <script  async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmVc-BGCJYox6qRnxX_iOItBIotCj8pRQ&libraries=places&callback=initMap"></script>
 
