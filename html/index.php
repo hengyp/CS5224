@@ -138,6 +138,12 @@ function initMap() {
     					map:map,title:"You are here!"
   					});
   
+					//Zoom in on click function
+  					google.maps.event.addListener(marker,'click',function() {
+  					map.setZoom(16);
+  					map.setCenter(marker.getPosition());
+  					});  
+  
   					marker.setMap(map);
           		}, showError
           	);
