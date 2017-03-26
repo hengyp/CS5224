@@ -78,7 +78,6 @@ function initMap() {
 
           	if (places.length == 0) {
             	return;
-            	
           	}
 
           	infoCenter=1;
@@ -213,7 +212,6 @@ function initMap() {
 
 				marker' . $index . '.setMap(map);
 			
-				var contentString' . $index . '=\'<div style="color:#000000"><h1>' . $carPark .'</h1><h3>Lots available = ' . $ar3["lots"] .'/' . $ar3["total_Lots"] .' </h3><h3>Price = $' . $ar3["price"] . ' per hour</h3><h3>' . $ar3["carParkOwner"] . '</h3> <button type="button">Book Now!</button> </div>\';
 				
 				var infowindow' . $index . ' = new google.maps.InfoWindow({
     					content: contentString' . $index . '
@@ -222,10 +220,10 @@ function initMap() {
 				marker' . $index . '.addListener("click", function(){
 					infowindow' . $index . '.open(map, marker' .$index. ');
 
-				});			
+				});
 				
 				';
-				//open by default
+				
 								
 			}
 
