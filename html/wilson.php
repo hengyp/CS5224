@@ -444,7 +444,7 @@ body, html {
 </div>
 -->
 
-	<img src="parkspot_logo.png" alt="ParkSpot">
+	<img src="logo.png" alt="ParkSpot">
 
 
 
