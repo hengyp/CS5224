@@ -29,13 +29,9 @@ body, html {
 </style>
 <body>
 
-
-
-<div class="header">
-
-<h3>ParkSpot</h3>
-</div>
-
+<a href="https://52.221.125.130/index.php">
+<img src="logo.png">
+</a>
 
 <input id="pac-input" class="controls" type="text" placeholder="Search Box">
 
