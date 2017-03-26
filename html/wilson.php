@@ -444,10 +444,8 @@ body, html {
 </div>
 -->
 
-<div class="header">
-    <h2>ParkSpot Logo</h2>
 	<img src="parkspot_logo.png" alt="ParkSpot">
-</div>
+
 
 
 <input id="pac-input" class="controls" type="text" placeholder="Search Box">
