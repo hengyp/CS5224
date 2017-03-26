@@ -212,7 +212,7 @@ function initMap() {
 
 				marker' . $index . '.setMap(map);
 			
-				var contentString' . $index . '=\'<div style="color:#000000"><h2>' . $carPark .'</h2><h3>Lots available = ' . $ar3["lots"] .' / ' . $ar3["total_Lots"] .'</h3><h3>Price = $' . $ar3["price"] . '</h3><h3>Source: ' . $ar3["carParkOwner"] . '</h3> <button type="button">Book Now!</button> </div>\';
+				var contentString' . $index . '=\'<div style="color:#000000"><h2>' . $carPark .'</h2><h3>Lots available = ' . $ar3["lots"] .' / ' . $ar3["total_Lots"] .'</h3><h3>Price = $' . $ar3["price"] . ' per hour</h3><h3>Source: ' . $ar3["carParkOwner"] . '</h3> <button type="button">Book Now!</button> </div>\';
 				
 				var infowindow' . $index . ' = new google.maps.InfoWindow({
     					content: contentString' . $index . '
