@@ -222,9 +222,7 @@ function initMap() {
 				marker' . $index . '.addListener("click", function(){
 					infowindow' . $index . '.open(map, marker' .$index. ');
 
-				});
-				
-				infowindow.open(map,marker);				
+				});			
 				
 				';
 				//open by default
