@@ -445,7 +445,8 @@ body, html {
 -->
 
 <div class="header">
-    <h3>ParkSpot</h3>
+    <h2>ParkSpot Logo</h2>
+	<img src="parkspot_logo.png" alt="ParkSpot">
 </div>
 
 
