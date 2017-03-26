@@ -78,6 +78,7 @@ function initMap() {
 
           	if (places.length == 0) {
             	return;
+            	
           	}
 
           	infoCenter=1;
@@ -193,7 +194,7 @@ function initMap() {
     			position: {lat: ' . $ar3['latitude'] . ', lng: ' . $ar3['longitude'] . '},
     			map:map,
     			title:"' . $ar3['development'] . ', ' . $ar3['lots'] . ', ' . $ar3['total_Lots'] . ', ' . '$'. $ar3['price'] . ",". $ar3['carParkOwner'] .'",
-    			icon: '; 
+    			icon: ';
     			
 				if ($ar3['carParkOwner'] == 'URA') {
 					echo 'imageBlue';				
@@ -212,7 +213,7 @@ function initMap() {
 
 				marker' . $index . '.setMap(map);
 			
-				var contentString' . $index . '=\'<div style="color:#000000"><h1>' . $carPark .'</h1><h3>Lots available = ' . $ar3["lots"] .'/' . $ar3["total_Lots"] .' </h3><h3>Price = $' . $ar3["price"] . ' per hour</h3><h3>Source: '. $ar3["carParkOwner"] . '</h3> <button type="button">Book Now!</button> </div>\';
+				var contentString' . $index . '=\'<div style="color:#000000"><h1>' . $carPark .'</h1><h3>Lots available = ' . $ar3["lots"] .'/' . $ar3["total_Lots"] .' </h3><h3>Price = $' . $ar3["price"] . ' per hour</h3><h3>' . $ar3["carParkOwner"] . '</h3> <button type="button">Book Now!</button> </div>\';
 				
 				var infowindow' . $index . ' = new google.maps.InfoWindow({
     					content: contentString' . $index . '
@@ -223,8 +224,10 @@ function initMap() {
 
 				});
 				
-				';
+				infowindow.open(map,marker);				
 				
+				';
+				//open by default
 								
 			}
 
