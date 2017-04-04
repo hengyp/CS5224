@@ -238,7 +238,7 @@ function initMap() {
 				marker' . $ar3['carParkID'] . '.setMap(map);
 			
 				var contentString' . $ar3['carParkID'] . '=\'<div style="color:#000000"><h1>' . $carPark .'</h1><h3>Lots available =' . $ar3["lots"] .'</h3><h3>Price = $' . $ar3["price"] . '</h3><h3>' . $ar3["carParkOwner"] . 
-				'</h3> <a href="booking.php?carpark_id=' . $ar3['carParkID'] . '&carpark=' . $carPark .'"> <b>Book Now</b> </a> </div>\';
+				'</h3> <p><a href="booking.php?carpark_id=' . $ar3['carParkID'] . '&carpark=' . $carPark .'"><b>Book Now</b></a></p><p><a href="https://maps.google.com/maps?q=' .$ar3['latitude']. ',' . $ar3['longitude'] . '"><b>Directions</b></a></p></div>\';
 				
 				var infowindow' . $ar3['carParkID'] . ' = new google.maps.InfoWindow({
     					content: contentString' . $ar3['carParkID'] . '
