@@ -37,6 +37,8 @@ body, html {
 <img src="w3images/logo.png">
 </a>
 
+<img src="w3images/ad.gif" alt="banner" style="width:100px;height:80px;" align="center">
+
 <input id="pac-input" type="text" placeholder="Search Box">
 
 <div id="googleMap" style="height:90%; padding:0px"></div>
