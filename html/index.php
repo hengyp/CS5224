@@ -22,7 +22,7 @@ body, html {
 
 
 .header {
-    background-color: #000000;
+    background-color: #EDEDED;
     color: #ffffff;
 }
 
