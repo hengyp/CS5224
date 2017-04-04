@@ -15,14 +15,14 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #000000;
+    background-color: #EDEDED;
     color: #ffffff;
 
 }
 
 
 .header {
-    background-color: #EDEDED;
+    background-color: #000000;
     color: #ffffff;
 }
 
