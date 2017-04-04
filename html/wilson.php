@@ -26,21 +26,30 @@ body, html {
     color: #ffffff;
 }
 
+
+
 </style>
 <body>
+
+
 
 <a href="https://52.221.125.130/index.php">
 <img src="logo.png">
 </a>
 
-<input id="pac-input" class="controls" type="text" placeholder="Search Box">
+<input id="pac-input" type="text" placeholder="Search Box">
 
 <div id="googleMap" style="height:90%; padding:0px"></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 
 <script>
 
 function initMap() {
+
+			var	markerArray=[];
 
   			var mapOptions= {
     				center: {lat: 1.362524578086153, lng: 103.81702423095703},
@@ -53,7 +62,7 @@ function initMap() {
    		var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
         	var input = document.getElementById('pac-input');
         	var searchBox = new google.maps.places.SearchBox(input);
-        	map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+        	map.controls[google.maps.ControlPosition.TOP_CENTER].push(input);
 
 
         	// Bias the SearchBox results towards current map's viewport.
@@ -63,8 +72,30 @@ function initMap() {
         
         	google.maps.event.addListener(map, "center_changed", function() {
         	
-        		if(infoCenter==1){ 
-        			alert(map.getCenter().lat().toString().concat(", ").concat(map.getCenter().lng().toString()).concat("*"));
+        		if(infoCenter==1){
+        			
+        			var outputString = "bookNearRedirect.php?lat=";
+        			
+        			var urlString = outputString.concat(map.getCenter().lat().toString()).concat('&lon=').concat(map.getCenter().lng().toString()).concat('&result=3');
+
+					$.get(urlString, function(data, status){
+						var resultString=JSON.parse(data);
+						var resultString1 = JSON.parse(JSON.stringify(resultString.result[0]));						
+						var resultString2 = JSON.parse(JSON.stringify(resultString.result[1]));						
+						var resultString3 = JSON.parse(JSON.stringify(resultString.result[2]));
+						
+						
+						markerArray[resultString1.carParkID].setAnimation(google.maps.Animation.BOUNCE);						
+						markerArray[resultString2.carParkID].setAnimation(google.maps.Animation.BOUNCE);						
+						markerArray[resultString3.carParkID].setAnimation(google.maps.Animation.BOUNCE);						
+						
+					});
+
+
+
+        			//alert(urlString);
+        			 
+        			//alert(map.getCenter().lat().toString().concat(", ").concat(map.getCenter().lng().toString()).concat("*"));
         			infoCenter=0; 
         		};
         		
@@ -139,13 +170,6 @@ function initMap() {
   					});
   
   					marker.setMap(map);
-
-					//Zoom in on click function
-  					google.maps.event.addListener(marker,'click',function() {
-  					map.setZoom(16);
-  					map.setCenter(marker.getPosition());
-  					});    					
-  					
           		}, showError
           	);
         	} else {
@@ -170,6 +194,7 @@ function initMap() {
 			};
 
 
+
 <?php
 
 		require_once 'HTTP/Request2.php';
@@ -189,10 +214,10 @@ function initMap() {
 				$carPark = preg_replace("~[^a-z0-9 ]~i", "", $ar3['development']); 
 				//Have to sanitize as the values contain illegal values!
 	 
-  				echo 'var marker' . $index . ' = new google.maps.Marker({
+  				echo 'var marker' . $ar3['carParkID'] . ' = new google.maps.Marker({
     			position: {lat: ' . $ar3['latitude'] . ', lng: ' . $ar3['longitude'] . '},
     			map:map,
-    			title:"' . $ar3['development'] . ', ' . $ar3['lots'] . ', ' . $ar3['total_Lots'] . ',  ' . '$'. $ar3['price'] . ",". $ar3['carParkOwner'] .'",
+    			title:"' . $ar3['development'] . ', ' . $ar3['lots'] . ', ' . '$'. $ar3['price'] . ",". $ar3['carParkOwner'] .'",
     			icon: ';
     			
 				if ($ar3['carParkOwner'] == 'URA') {
@@ -210,18 +235,21 @@ function initMap() {
     			echo '
   				});
 
-				marker' . $index . '.setMap(map);
+				marker' . $ar3['carParkID'] . '.setMap(map);
 			
-				var contentString' . $index . '=\'<div style="color:#000000"><h1>' . $carPark .'</h1><h3>Lots available = ' . $ar3["lots"] .' / ' . $ar3["total_Lots"] .'</h3><h3>Price = $' . $ar3["price"] . ' per hour</h3><h3>Source: ' . $ar3["carParkOwner"] . '</h3> <button type="button">Book Now!</button> </div>\';
+				var contentString' . $ar3['carParkID'] . '=\'<div style="color:#000000"><h1>' . $carPark .'</h1><h3>Lots available =' . $ar3["lots"] .'</h3><h3>Price = $' . $ar3["price"] . '</h3><h3>' . $ar3["carParkOwner"] . 
+				'</h3> <p><a href="booking.php?carpark_id=' . $ar3['carParkID'] . '&carpark=' . $carPark .'"><b>Book Now</b></a></p><p><a href="https://maps.google.com/maps?q=' .$ar3['latitude']. ',' . $ar3['longitude'] . '"><b>Directions</b></a></p></div>\';
 				
-				var infowindow' . $index . ' = new google.maps.InfoWindow({
-    					content: contentString' . $index . '
+				var infowindow' . $ar3['carParkID'] . ' = new google.maps.InfoWindow({
+    					content: contentString' . $ar3['carParkID'] . '
   				});
 				
-				marker' . $index . '.addListener("click", function(){
-					infowindow' . $index . '.open(map, marker' .$index. ');
+				marker' . $ar3['carParkID'] . '.addListener("click", function(){
+					infowindow' . $ar3['carParkID'] . '.open(map, marker' . $ar3['carParkID'] . ');
 
 				});
+				
+				markerArray[' .$ar3['carParkID'] . ']=marker' . $ar3['carParkID'] . ';
 				
 				';
 				

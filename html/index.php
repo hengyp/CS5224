@@ -15,7 +15,7 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #000000;
+    background-color: #EDEDED;
     color: #ffffff;
 
 }
@@ -34,7 +34,7 @@ body, html {
 
 
 <a href="https://52.221.125.130/index.php">
-<img src="logo.png">
+<img src="w3images/logo.png">
 </a>
 
 <input id="pac-input" type="text" placeholder="Search Box">
