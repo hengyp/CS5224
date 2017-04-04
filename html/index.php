@@ -32,12 +32,13 @@ body, html {
 <body>
 
 
-
+<p>
 <a href="https://52.221.125.130/index.php">
 <img src="w3images/logo.png">
 </a>
 
-<img src="w3images/ad.png" alt="banner" align="middle">
+<img src="w3images/ad.png" alt="banner" style="text-align:center;">
+</p>
 
 <input id="pac-input" type="text" placeholder="Search Box">
 
