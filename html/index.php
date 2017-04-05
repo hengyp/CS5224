@@ -324,9 +324,8 @@ function showError(error) {
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmVc-BGCJYox6qRnxX_iOItBIotCj8pRQ&libraries=places&callback=initMap"></script>
 
-<footer>
-	//Facebook link  
-  <div class="fb-follow" data-href="https://www.facebook.com/ParkSpot-634769236723014/" data-layout="standard" data-size="small" data-show-faces="true"></div>
+<footer>  
+  <div class="fb-follow" data-href="https://www.facebook.com/ParkSpot-634769236723014/" data-layout="button" data-size="small" data-show-faces="false"></div>
 </footer>
 </body>
 </html>
