@@ -314,5 +314,8 @@ function showError(error) {
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmVc-BGCJYox6qRnxX_iOItBIotCj8pRQ&libraries=places&callback=initMap"></script>
 
+<footer>
+  <p>Posted by: Hege Refsnes</p>
+</footer>
 </body>
 </html>
