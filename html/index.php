@@ -324,8 +324,8 @@ function showError(error) {
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmVc-BGCJYox6qRnxX_iOItBIotCj8pRQ&libraries=places&callback=initMap"></script>
 
 <footer>  
-  <div class="fb-follow" data-href="https://www.facebook.com/ParkSpot-634769236723014/" data-layout="button" data-size="small" data-show-faces="false" align='middle'></div>
-  <a href="https://twitter.com/ParkSpotSG" class="twitter-follow-button" data-show-count="false" align='middle'>Follow @ParkSpot</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <div class="fb-follow" data-href="https://www.facebook.com/ParkSpot-634769236723014/" data-layout="button" data-size="small" data-show-faces="false" style="vertical-align:bottom"></div>
+  <a href="https://twitter.com/ParkSpotSG" class="twitter-follow-button" data-show-count="false" style="vertical-align:bottom">Follow @ParkSpot</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 </footer>
 </body>
 </html>
