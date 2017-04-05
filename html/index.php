@@ -48,6 +48,11 @@ body, html {
 function initMap() {
 
 			var	markerArray=[];
+			var 	infoWindowArray=[];
+			var	prevMarker=[];
+			var	prevInfoWindow=false;
+			
+			prevMarker[0]=null;
 
   			var mapOptions= {
     				center: {lat: 1.362524578086153, lng: 103.81702423095703},
@@ -82,10 +87,26 @@ function initMap() {
 						var resultString2 = JSON.parse(JSON.stringify(resultString.result[1]));						
 						var resultString3 = JSON.parse(JSON.stringify(resultString.result[2]));
 						
+						if (prevMarker[0]!=null)
+						{
+							markerArray[prevMarker[0]].setAnimation(null);						
+							markerArray[prevMarker[1]].setAnimation(null);						
+							markerArray[prevMarker[2]].setAnimation(null);						
+							
+						};
 						
 						markerArray[resultString1.carParkID].setAnimation(google.maps.Animation.BOUNCE);						
 						markerArray[resultString2.carParkID].setAnimation(google.maps.Animation.BOUNCE);						
-						markerArray[resultString3.carParkID].setAnimation(google.maps.Animation.BOUNCE);						
+						markerArray[resultString3.carParkID].setAnimation(google.maps.Animation.BOUNCE);
+						
+						new google.maps.event.trigger( markerArray[resultString1.carParkID], 'click' );
+						
+						prevInfoWindow=resultString1.carParkID;
+						
+						prevMarker[0]=resultString1.carParkID;
+						prevMarker[1]=resultString2.carParkID;
+						prevMarker[2]=resultString3.carParkID;
+												
 						
 					});
 
@@ -247,11 +268,16 @@ function initMap() {
 				
 				marker' . $ar3['carParkID'] . '.addListener("click", function(){
 					infowindow' . $ar3['carParkID'] . '.open(map, marker' . $ar3['carParkID'] . ');
+					
+					if (prevInfoWindow) {
+						infoWindowArray[prevInfoWindow].close();
+						prevInfoWindow=' . $ar3['carParkID'] . ';
+					};
 
 				});
 				
 				markerArray[' .$ar3['carParkID'] . ']=marker' . $ar3['carParkID'] . ';
-				
+				infoWindowArray[' .$ar3['carParkID'] . ']=infowindow' . $ar3['carParkID'] . ';
 				';
 				
 								
