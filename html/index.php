@@ -271,8 +271,8 @@ function initMap() {
 					
 					if (prevInfoWindow) {
 						infoWindowArray[prevInfoWindow].close();
-						prevInfoWindow=' . $ar3['carParkID'] . ';
 					};
+					prevInfoWindow=' . $ar3['carParkID'] . ';
 
 				});
 				
