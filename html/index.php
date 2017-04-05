@@ -50,7 +50,7 @@ body, html {
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <a href="https://52.221.125.130/index.php"><img src="w3images/logo.png"></a>
-<a href="http://www.suzukicar.com.sg"><img src="w3images/ad.png" class="centerImage></a>
+<a href="http://www.suzukicar.com.sg"><img src="w3images/ad.png" class="centerImage"></a>
 
 <input id="pac-input" type="text" placeholder="Search Box">
 
