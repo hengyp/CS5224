@@ -10,14 +10,6 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
-<style type="text/css">
-.centerImage
-{
-text-align:center;
-display:block;
-}
-</style>
-
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 body, html {
@@ -39,6 +31,12 @@ body, html {
     margin: auto;
     height: 330px;
     text-align:center;
+}
+
+.centerImage
+{
+text-align:center;
+display:block;
 }
 
 </style>
