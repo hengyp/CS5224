@@ -325,6 +325,7 @@ function showError(error) {
 
 <footer>  
   <div class="fb-follow" data-href="https://www.facebook.com/ParkSpot-634769236723014/" data-layout="button" data-size="small" data-show-faces="false"></div>
+  <a href="https://twitter.com/ParkSpotSG" class="twitter-follow-button" data-show-count="false">Follow @ParkSpotSG</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 </footer>
 </body>
 </html>
