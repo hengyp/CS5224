@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <title>ParkSpot.com</title>
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="w3images/logosmall.png" />
+</head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
