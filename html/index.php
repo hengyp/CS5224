@@ -31,6 +31,16 @@ body, html {
 </style>
 <body>
 
+//Facebook Script
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <a href="https://52.221.125.130/index.php">
 <img src="w3images/logo.png">
 </a>
@@ -315,7 +325,8 @@ function showError(error) {
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmVc-BGCJYox6qRnxX_iOItBIotCj8pRQ&libraries=places&callback=initMap"></script>
 
 <footer>
-  <p>Posted by: Hege Refsnes</p>
+	//Facebook link  
+  <div class="fb-follow" data-href="https://www.facebook.com/ParkSpot-634769236723014/" data-layout="standard" data-size="small" data-show-faces="true"></div>
 </footer>
 </body>
 </html>
