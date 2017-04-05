@@ -21,22 +21,9 @@ body, html {
 
 }
 
-
 .header {
     background-color: #000000;
     color: #ffffff;
-}
-
-.footer {
-    margin: auto;
-    height: 330px;
-    text-align:center;
-}
-
-.centerImage
-{
-text-align:center;
-display:block;
 }
 
 </style>
@@ -52,7 +39,7 @@ display:block;
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <a href="https://52.221.125.130/index.php"><img src="w3images/logo.png"></a>
-<a href="http://www.suzukicar.com.sg"><img src="w3images/ad.png" class="centerImage"></a>
+<a href="http://www.suzukicar.com.sg"><img src="w3images/ad.png"></a>
 
 <input id="pac-input" type="text" placeholder="Search Box">
 
@@ -337,5 +324,6 @@ function showError(error) {
   <div class="fb-follow" data-href="https://www.facebook.com/ParkSpot-634769236723014/" data-layout="button" data-size="small" data-show-faces="false"></div>
   <a href="https://twitter.com/ParkSpotSG" class="twitter-follow-button" data-show-count="false">Follow @ParkSpot</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 </footer>
+
 </body>
 </html>
