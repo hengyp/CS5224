@@ -10,7 +10,13 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
-
+<style type="text/css">
+.centerImage
+{
+text-align:center;
+display:block;
+}
+</style>
 
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
@@ -46,6 +52,7 @@ body, html {
 <a href="https://52.221.125.130/index.php">
 <img src="w3images/logo.png">
 </a>
+<img src="w3images/ad.png" alt="ad" class="centerImage">
 
 <input id="pac-input" type="text" placeholder="Search Box">
 
