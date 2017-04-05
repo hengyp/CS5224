@@ -26,11 +26,6 @@ body, html {
     color: #ffffff;
 }
 
-IMG.displayed {
-    display: block;
-    margin-left: auto;
-    margin-right: auto }
-
 </style>
 <body>
 
@@ -44,7 +39,7 @@ IMG.displayed {
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <a href="https://52.221.125.130/index.php"><img src="w3images/logo.png"></a>
-<a href="http://www.suzukicar.com.sg"><img src="w3images/ad.png" class="displayed"></a>
+<a href="http://www.suzukicar.com.sg"><img src="w3images/ad.png"></a>
 
 <input id="pac-input" type="text" placeholder="Search Box">
 
