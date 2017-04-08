@@ -37,7 +37,7 @@ body, html {
 
 @media only screen and (min-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
 
-	.heightLevel {height:60%;} 
+	.heightLevel {height:30%;} 
 
 }
 
