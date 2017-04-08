@@ -28,16 +28,9 @@ body, html {
 }
 
 
-@media only screen and (min-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+@media only screen and (min-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3)  {
 
 	.heightLevel {height:80%;} 
-
-}
-
-
-@media only screen and (min-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-
-	.heightLevel {height:70%;} 
 
 }
 
