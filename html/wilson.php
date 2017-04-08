@@ -42,6 +42,17 @@ footer {
         padding: 0px;
     }
 
+nav ul li a {
+    color: #ffffff;  
+    border-width:1px;
+    margin:0 .2em;
+    background-color: #2A3F54;
+}
+nav ul li a:hover {
+    color:yellow;
+    background-color:rgba(123, 45, 198, .9);
+}
+
 @media only screen and (min-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)  {
 
 	.heightLevel {height:80%;} 
@@ -99,6 +110,8 @@ footer {
 
 <header class="w3-top w3-bar w3-theme">
   <button class="w3-bar-item w3-button w3-xlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
+  <a href="https://52.221.125.130/index.php"><img src="w3images/logo.png"></a>
+  <a href="http://www.suzukicar.com.sg"><img src="w3images/ad.png" style="float:right"></a>
 </header>
 
 <div class="w3-container" style="margin-top:50px">
@@ -115,11 +128,6 @@ function closeSidebar() {
 </script>
 
 <!-- End of Navigation Bar -->
-
-<a href="https://52.221.125.130/index.php"><img src="w3images/logo.png"></a>
-<a href="http://www.suzukicar.com.sg"><img src="w3images/ad.png" style="float:right"></a>
-
-</div>
 
 <input id="pac-input" type="text" placeholder="Search Box">
 
