@@ -114,7 +114,7 @@ footer {
   <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
   <br>
   <div class="w3-padding w3-center">
-    <a href="http://52.220.214.10:8080/ParkSpot/Admin/" target="_blank" style="width:100%"><img src="w3images/admin.png"></a><br>
+    <a href="http://52.220.214.10:8080/ParkSpot/" target="_blank" style="width:100%"><img src="w3images/admin.png"></a><br>
   </div>
 </div>
 </nav>
