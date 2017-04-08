@@ -28,7 +28,7 @@ body, html {
 }
 
 
-@media only screen and (min-width: 414px)  {
+@media only screen and (min-width: 414px) and (orientation: portrait) {
 
 	.heightLevel {height:80%;} 
 
