@@ -88,7 +88,28 @@ footer {
 
 <div class="w3-container w3-card">
 
+<nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+	<div class="w3-container w3-theme-d2">
+  	<span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+  	<br>
+  	<div class="w3-padding w3-center">
+    <a href="https://www.facebook.com/ParkSpot-634769236723014/" target="_blank" style="width:50%"><img src="w3images/email.png"></a><br>
+  	</div>
 
+	</div>
+</nav>
+
+<script>
+closeSidebar();
+function openSidebar() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function closeSidebar() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+<button class="w3-bar-item w3-button w3-xlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
 <a href="https://52.221.125.130/index.php"><img src="w3images/logo.png"></a>
 <a href="http://www.suzukicar.com.sg"><img src="w3images/ad.png" style="float:right"></a>
 
