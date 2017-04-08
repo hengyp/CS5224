@@ -28,6 +28,14 @@ body, html {
     color: #ffffff;
 }
 
+#Nav {
+
+    margin-top: 20px;
+    background-color: #2A3F54;
+    color: #f2f2f2;
+    text-align: center;
+    }
+
 footer {
         bottom: 0;
         position: fixed;
@@ -42,16 +50,7 @@ footer {
         padding: 0px;
     }
 
-nav ul li a {
-    color: #ffffff;  
-    border-width:1px;
-    margin:0 .2em;
-    background-color: #2A3F54;
-}
-nav ul li a:hover {
-    color:yellow;
-    background-color:rgba(123, 45, 198, .9);
-}
+
 
 @media only screen and (min-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)  {
 
