@@ -379,9 +379,10 @@ function showError(error) {
 
 <footer>
 
-<script language="JavaScript" type="text/javascript"> 
- document.write('<script language="JavaScript" src="https://www.worldweatheronline.com/widget/v4/weather-widget.ashx?q=Singapore%2c+Singapore&width=100&custom_header=Singapore, Singapore&num_of_day=0&title_bg_color=020202&title_text_color=FFFFFF&widget_bg_color=2A3F54&widget_text_color=FFFFFF&type=js&icon=0&cb=' + Math.random() + '" type="text/javascript"><\/scr' + 'ipt>');
-</script>
+<!-- weather widget start -->
+<a target="_blank" href="http://www.booked.net/weather/singapore-21"><img src="https://w.bookcdn.com/weather/picture/13_21_1_1_2a3f54_158_fff5d9_ffffff_ff8c00_3_fff5d9_333333_0_3.png?scode=124&domid=w209&anc_id=69665"  alt="booked.net"/>
+</a>
+<!-- weather widget end -->
  
 	<div class="footer">
 		<a href="https://www.facebook.com/ParkSpot-634769236723014/" target="_blank"><img src="w3images/fb.png"></a>
