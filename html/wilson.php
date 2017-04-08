@@ -10,6 +10,7 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3mobile.css">
+<link rel="stylesheet" href="/lib/w3-theme-teal.css">
 
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
@@ -85,19 +86,23 @@ footer {
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-
-<div class="w3-container w3-card">
-
+<!-- Start of Navigation Bar -->
 <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
-	<div class="w3-container w3-theme-d2">
-  	<span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
-  	<br>
-  	<div class="w3-padding w3-center">
-    <a href="https://www.facebook.com/ParkSpot-634769236723014/" target="_blank" style="width:50%"><img src="w3images/email.png"></a><br>
-  	</div>
-
-	</div>
+<div class="w3-container w3-theme-d2">
+  <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+  <br>
+  <div class="w3-padding w3-center">
+    <a href="https://www.facebook.com/ParkSpot-634769236723014/" target="_blank" style="width:100%"><img src="img_avatar.jpg"></a><br>
+  </div>
+</div>
 </nav>
+
+<header class="w3-top w3-bar w3-theme">
+  <button class="w3-bar-item w3-button w3-xlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
+</header>
+
+<div class="w3-container" style="margin-top:50px">
+</div>
 
 <script>
 closeSidebar();
@@ -109,19 +114,12 @@ function closeSidebar() {
 }
 </script>
 
-<header class="w3-top w3-bar w3-theme">
-  <button class="w3-bar-item w3-button w3-xlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
-  
-</header>
-<div class="w3-container" style="margin-top:50px">
-</div>
+<!-- End of Navigation Bar -->
 
 <a href="https://52.221.125.130/index.php"><img src="w3images/logo.png"></a>
 <a href="http://www.suzukicar.com.sg"><img src="w3images/ad.png" style="float:right"></a>
 
 </div>
-
-
 
 <input id="pac-input" type="text" placeholder="Search Box">
 
