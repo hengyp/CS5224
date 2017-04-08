@@ -23,6 +23,12 @@ body, html {
 
 }
 
+#header {
+position: fixed;
+top: 0;
+background-color: #2A3F54;
+}
+
 .header {
     background-color: #000000;
     color: #ffffff;
