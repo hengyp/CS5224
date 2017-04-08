@@ -378,12 +378,17 @@ function showError(error) {
 <div class="w3-container w3-card">
 
 <footer>
+
+<script language="JavaScript" type="text/javascript"> 
+ document.write('<script language="JavaScript" src="https://www.worldweatheronline.com/widget/v4/weather-widget.ashx?q=Singapore%2c+Singapore&width=100&custom_header=Singapore, Singapore&num_of_day=0&title_bg_color=020202&title_text_color=FFFFFF&widget_bg_color=2A3F54&widget_text_color=FFFFFF&type=js&icon=0&cb=' + Math.random() + '" type="text/javascript"><\/scr' + 'ipt>');
+</script>
+ 
 	<div class="footer">
 		<a href="https://www.facebook.com/ParkSpot-634769236723014/" target="_blank"><img src="w3images/fb.png"></a>
 		<a href="https://www.facebook.com/ParkSpot-634769236723014/" target="_blank"><img src="w3images/gplus.png"></a>
 		<a href="https://twitter.com/ParkSpotSG" target="_blank"><img src="w3images/twitter.png"></a>
-		<a href="mailto:enquiry@parkspot.com?Subject=Enquiry" target="_blank"><img src="w3images/email.png"></a>
 		<a href="https://www.linkedin.com/" target="_blank"><img src="w3images/linkedin.png"></a>
+		<a href="mailto:enquiry@parkspot.com?Subject=Enquiry" target="_blank"><img src="w3images/email.png"></a>
 	</div>
 </footer>
 </div>
