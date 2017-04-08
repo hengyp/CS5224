@@ -416,14 +416,12 @@ function showError(error) {
 <div class="w3-container w3-card">
 
 <footer>
-
-	<div class="footer" id="weather">
-		<!-- weather widget start -->
-		<a target="_blank" href="http://www.booked.net/weather/singapore-21"><img src="https://w.bookcdn.com/weather/picture/21_21_1_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_3.png?scode=124&domid=w209&anc_id=45549"  alt="booked.net"/></a>
-		<!-- weather widget end -->
-	</div>
-
 	<div class="footer">
+		
+		<!-- weather widget start -->
+		<a target="_blank" href="http://www.booked.net/weather/singapore-21"><img src="https://w.bookcdn.com/weather/picture/21_21_1_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_3.png?scode=124&domid=w209&anc_id=45549"  style="float:left"/></a>
+		<!-- weather widget end -->
+
 		<a href="https://www.facebook.com/ParkSpot-634769236723014/" target="_blank"><img src="w3images/fb.png"></a>
 		<a href="https://www.facebook.com/ParkSpot-634769236723014/" target="_blank"><img src="w3images/gplus.png"></a>
 		<a href="https://twitter.com/ParkSpotSG" target="_blank"><img src="w3images/twitter.png"></a>
