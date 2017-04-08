@@ -35,6 +35,13 @@ body, html {
     color: #f2f2f2;
     text-align: center;
     }
+    
+#weather {
+	 text-align:left;
+    background-color: #2A3F54;
+    color: #f2f2f2;
+    bottom: 0;
+    }
 
 footer {
         bottom: 0;
@@ -47,7 +54,6 @@ footer {
         text-align:center;
         padding:10px;
         color:#ffffff;
-        padding: 0px;
     }
 
 
@@ -411,7 +417,7 @@ function showError(error) {
 
 <footer>
 
-	<div class="w3-container w3-card">
+	<div class="w3-container w3-card" id="weather">
 		<!-- weather widget start -->
 		<a target="_blank" href="http://www.booked.net/weather/singapore-21"><img src="https://w.bookcdn.com/weather/picture/21_21_1_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_3.png?scode=124&domid=w209&anc_id=45549"  alt="booked.net"/></a>
 		<!-- weather widget end -->
