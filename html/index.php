@@ -9,6 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3mobile.css">
 
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
@@ -38,8 +39,14 @@ body, html {
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
+
+<div class="w3-container w3-card">
+
+
 <a href="https://52.221.125.130/index.php"><img src="w3images/logo.png"></a>
 <a href="http://www.suzukicar.com.sg"><img src="w3images/ad.png" style="float:right"></a>
+
+</div>
 
 <input id="pac-input" type="text" placeholder="Search Box">
 
