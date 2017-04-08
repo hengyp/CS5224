@@ -30,6 +30,7 @@ body, html {
 footer {
   margin: auto;
   width: 960px;
+  width: 100%;
 }
 
 @media only screen and (min-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)  {
