@@ -30,7 +30,7 @@ body, html {
 
 #mySidebar {
 
-    margin-top: 20px;
+    margin-top: 0px;
     background-color: #2A3F54;
     color: #f2f2f2;
     text-align: center;
