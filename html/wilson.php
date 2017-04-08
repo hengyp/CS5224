@@ -28,7 +28,7 @@ body, html {
     color: #ffffff;
 }
 
-#Nav {
+#mySidebar {
 
     margin-top: 20px;
     background-color: #2A3F54;
