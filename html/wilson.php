@@ -28,10 +28,17 @@ body, html {
 }
 
 footer {
-  margin: auto;
-  width: 960px;
-  width: 100%;
+        bottom: 0;
+        position: fixed;
+        width: 100%;
 }
+.footer {
+        margin: auto;
+        width: 400px;
+        text-align:center;
+        padding:10px;
+        color:#ffffff;
+    }
 
 @media only screen and (min-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)  {
 
@@ -370,11 +377,13 @@ function showError(error) {
 <div class="w3-container w3-card">
 
 <footer>
-	<a href="https://www.facebook.com/ParkSpot-634769236723014/" target="_blank"><img src="w3images/fb.png"></a>
-	<a href="https://www.facebook.com/ParkSpot-634769236723014/" target="_blank"><img src="w3images/gplus.png"></a>
-	<a href="https://twitter.com/ParkSpotSG" target="_blank"><img src="w3images/twitter.png"></a>
-	<a href="mailto:enquiry@parkspot.com?Subject=Enquiry" target="_blank"><img src="w3images/email.png"></a>
-	<a href="https://www.linkedin.com/" target="_blank"><img src="w3images/linkedin.png"></a>
+	<div class="footer">
+		<a href="https://www.facebook.com/ParkSpot-634769236723014/" target="_blank"><img src="w3images/fb.png"></a>
+		<a href="https://www.facebook.com/ParkSpot-634769236723014/" target="_blank"><img src="w3images/gplus.png"></a>
+		<a href="https://twitter.com/ParkSpotSG" target="_blank"><img src="w3images/twitter.png"></a>
+		<a href="mailto:enquiry@parkspot.com?Subject=Enquiry" target="_blank"><img src="w3images/email.png"></a>
+		<a href="https://www.linkedin.com/" target="_blank"><img src="w3images/linkedin.png"></a>
+	</div>
 </footer>
 </div>
 
