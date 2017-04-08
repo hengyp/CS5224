@@ -27,6 +27,19 @@ body, html {
     color: #ffffff;
 }
 
+
+@media only screen and (min-width: 414px)  {
+
+	.heightLevel {height:80%;} 
+
+}
+
+@media only screen and (min-width: 415px) {
+
+	.heightLevel {height:88%;} 
+
+
+}
 </style>
 <body>
 
@@ -48,9 +61,11 @@ body, html {
 
 </div>
 
+
+
 <input id="pac-input" type="text" placeholder="Search Box">
 
-<div id="googleMap" style="height:90%; padding:0px"></div>
+<div id="googleMap" class ="heightLevel" style="padding:0px"></div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -327,10 +342,13 @@ function showError(error) {
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmVc-BGCJYox6qRnxX_iOItBIotCj8pRQ&libraries=places&callback=initMap"></script>
 
+<div class="w3-container w3-card">
+
 <footer>  
   <div class="fb-follow" data-href="https://www.facebook.com/ParkSpot-634769236723014/" data-layout="button" data-size="small" data-show-faces="false"></div>
   <a href="https://twitter.com/ParkSpotSG" class="twitter-follow-button" data-show-count="false">Follow @ParkSpot</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 </footer>
+</div>
 
 </body>
 </html>
