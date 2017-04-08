@@ -28,21 +28,21 @@ body, html {
 }
 
 
-@media only screen and (min-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+@media only screen and (min-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
 
 	.heightLevel {height:80%;} 
 
 }
 
 
-@media only screen and (min-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+@media only screen and (min-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
 
 	.heightLevel {height:30%;} 
 
 }
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
 
 	.heightLevel {height:88%;} 
 
