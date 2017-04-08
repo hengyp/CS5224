@@ -109,7 +109,13 @@ function closeSidebar() {
 }
 </script>
 
-<button class="w3-bar-item w3-button w3-xlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
+<header class="w3-top w3-bar w3-theme">
+  <button class="w3-bar-item w3-button w3-xlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
+  
+</header>
+<div class="w3-container" style="margin-top:50px">
+</div>
+
 <a href="https://52.221.125.130/index.php"><img src="w3images/logo.png"></a>
 <a href="http://www.suzukicar.com.sg"><img src="w3images/ad.png" style="float:right"></a>
 
