@@ -364,11 +364,11 @@ function showError(error) {
 <div class="w3-container w3-card">
 
 <footer>
-	<a href="https://www.facebook.com/ParkSpot-634769236723014/"><img src="w3images/fb.png"></a>
-	<a href="https://www.facebook.com/ParkSpot-634769236723014/"><img src="w3images/gplus.png"></a>
-	<a href="https://twitter.com/ParkSpotSG"><img src="w3images/twitter.png"></a>
-	<a href="mailto:enquiry@parkspot.com?Subject=Enquiry"><img src="w3images/email.png"></a>
-	<a href="https://www.linkedin.com/"><img src="w3images/linkedin.png"></a>
+	<a href="https://www.facebook.com/ParkSpot-634769236723014/" target="_blank"><img src="w3images/fb.png"></a>
+	<a href="https://www.facebook.com/ParkSpot-634769236723014/" target="_blank"><img src="w3images/gplus.png"></a>
+	<a href="https://twitter.com/ParkSpotSG" target="_blank"><img src="w3images/twitter.png"></a>
+	<a href="mailto:enquiry@parkspot.com?Subject=Enquiry" target="_blank"><img src="w3images/email.png"></a>
+	<a href="https://www.linkedin.com/" target="_blank"><img src="w3images/linkedin.png"></a>
 </footer>
 </div>
 
