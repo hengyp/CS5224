@@ -38,6 +38,7 @@ footer {
         text-align:center;
         padding:10px;
         color:#ffffff;
+        padding: 0px;
     }
 
 @media only screen and (min-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)  {
