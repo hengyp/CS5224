@@ -44,7 +44,7 @@ background-color: #2A3F54;
     text-align: center;
     }
 
-#googlemap {
+#googleMap {
 position: fixed;
 top: 0;
 padding: 0cm;
