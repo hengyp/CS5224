@@ -353,7 +353,7 @@ function initMap() {
   				echo 'var marker' . $ar3['carParkID'] . ' = new google.maps.Marker({
     			position: {lat: ' . $ar3['latitude'] . ', lng: ' . $ar3['longitude'] . '},
     			map:map,
-    			title:"' . $ar3['development'] . ', ' . $ar3['lots'] . ', ' . '$'. $ar3['price'] . ",". $ar3['carParkOwner'] .'", ". $ar3['total_Lots'] .'",
+    			title:"' . $ar3['development'] . ', ' . $ar3['lots'] . ', ' . $ar3['total_Lots'] . ', ' . '$'. $ar3['price'] . ",". $ar3['carParkOwner'] .'",
     			icon: ';
     			
 				if ($ar3['carParkOwner'] == 'URA') {
