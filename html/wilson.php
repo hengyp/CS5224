@@ -373,8 +373,8 @@ function initMap() {
 
 				marker' . $ar3['carParkID'] . '.setMap(map);
 			
-				var contentString' . $ar3['carParkID'] . '=\'<div style="color:#2A3F54"><h3>' . $carPark .'</h3><h4>Lots available =' . $ar3["lots"] .' / ' . $ar3["total_Lots"] .'</h4><h4>Price = $' . $ar3["price"] . ' per hour</h4><h4>' . $ar3["carParkOwner"] . 
-				'</h4> <p><a href="booking.php?carpark_id=' . $ar3['carParkID'] . '&carpark=' . $carPark .
+				var contentString' . $ar3['carParkID'] . '=\'<div style="color:#2A3F54"><h4>' . $carPark .'</h4><h5>Lots available = ' . $ar3["lots"] .' / ' . $ar3["total_Lots"] .'</h5><h5>Price = $' . $ar3["price"] . ' per hour</h5><h5>Source: ' . $ar3["carParkOwner"] . 
+				'</h5> <p><a href="booking.php?carpark_id=' . $ar3['carParkID'] . '&carpark=' . $carPark .
 				'"><b>Book Now</b></a></p><p><a href="https://maps.google.com/maps?q=' .$ar3['latitude']. ',' . $ar3['longitude'] . 
 				'"><b>Directions</b></a></p><p><a href="https://maps.google.com/maps?q=&layer=c&cbll='. $ar3['latitude'] . ',' .$ar3['longitude'] .
 				'"><b>Street view</b></p></div>\';
