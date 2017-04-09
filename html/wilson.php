@@ -47,6 +47,7 @@ background-color: #2A3F54;
 #googleMap {
 position: fixed;
 top: 0;
+bottom: 0;
 padding: 0cm;
 width: 100%;
 height: 100%;
