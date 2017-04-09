@@ -297,7 +297,7 @@ function initMap() {
   				echo 'var marker' . $ar3['carParkID'] . ' = new google.maps.Marker({
     			position: {lat: ' . $ar3['latitude'] . ', lng: ' . $ar3['longitude'] . '},
     			map:map,
-    			title:"' . $ar3['development'] . ', ' . $ar3['lots'] . ', ' . '$'. $ar3['price'] . ",". $ar3['carParkOwner'] .'",
+    			title:"' . $ar3['development'] . ', ' . $ar3['lots'] . ', ' . $ar3['total_Lots'] . ', ' . '$'. $ar3['price'] . ",". $ar3['carParkOwner'] .'",
     			icon: ';
     			
 				if ($ar3['carParkOwner'] == 'URA') {
@@ -317,8 +317,8 @@ function initMap() {
 
 				marker' . $ar3['carParkID'] . '.setMap(map);
 			
-				var contentString' . $ar3['carParkID'] . '=\'<div style="color:#000000"><h1>' . $carPark .'</h1><h3>Lots available =' . $ar3["lots"] .'</h3><h3>Price = $' . $ar3["price"] . '</h3><h3>' . $ar3["carParkOwner"] . 
-				'</h3> <p><a href="booking.php?carpark_id=' . $ar3['carParkID'] . '&carpark=' . $carPark .
+				var contentString' . $ar3['carParkID'] . '=\'<div style="color:#2A3F54"><h4>' . $carPark .'</h4><h5>Lots available = ' . $ar3["lots"] .' / ' . $ar3["total_Lots"] .'</h5><h5>Price = $' . $ar3["price"] . ' per hour</h5><h5>Source: ' . $ar3["carParkOwner"] . 
+				'</h5> <p><a href="booking.php?carpark_id=' . $ar3['carParkID'] . '&carpark=' . $carPark .
 				'"><b>Book Now</b></a></p><p><a href="https://maps.google.com/maps?q=' .$ar3['latitude']. ',' . $ar3['longitude'] . 
 				'"><b>Directions</b></a></p><p><a href="https://maps.google.com/maps?q=&layer=c&cbll='. $ar3['latitude'] . ',' .$ar3['longitude'] .
 				'"><b>Street view</b></p></div>\';
