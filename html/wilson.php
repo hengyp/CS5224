@@ -23,9 +23,11 @@ body, html {
 
 }
 
-#header {
+#myheader {
 position: fixed;
 top: 0;
+padding: 0cm;
+width: 100%;
 background-color: #2A3F54;
 }
 
@@ -119,7 +121,7 @@ footer {
 </div>
 </nav>
 
-<header class="w3-top w3-bar w3-theme">
+<header class="w3-top w3-bar w3-theme" id="myheader">
   <button class="w3-bar-item w3-button w3-xlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
   <a href="https://52.221.125.130/index.php"><img src="w3images/logo.png"></a>
   <a href="http://www.suzukicar.com.sg"><img src="w3images/ad.png" style="float:right"></a>
