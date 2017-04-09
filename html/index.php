@@ -59,6 +59,20 @@ body, html {
 
 
 }
+
+footer {
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+}
+.footer {
+        margin: auto;
+        width: 100%;
+        text-align:center;
+        padding:10px;
+        color:#ffffff;
+    }
+
 </style>
 <body>
 
@@ -363,10 +377,21 @@ function showError(error) {
 
 <div class="w3-container w3-card">
 
-<footer>  
-  <div class="fb-follow" data-href="https://www.facebook.com/ParkSpot-634769236723014/" data-layout="button" data-size="small" data-show-faces="false"></div>
-  <a href="https://twitter.com/ParkSpotSG" class="twitter-follow-button" data-show-count="false">Follow @ParkSpot</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<footer>
+	<div class="footer">
+		
+		<!-- weather widget start -->
+		<a target="_blank" href="http://www.booked.net/weather/singapore-21"><img src="https://w.bookcdn.com/weather/picture/21_21_1_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_3.png?scode=124&domid=w209&anc_id=45549"  style="float:left"/></a>
+		<!-- weather widget end -->
+
+		<a href="https://www.facebook.com/ParkSpot-634769236723014/" target="_blank"><img src="w3images/fb.png"></a>
+		<a href="https://www.facebook.com/ParkSpot-634769236723014/" target="_blank"><img src="w3images/gplus.png"></a>
+		<a href="https://twitter.com/ParkSpotSG" target="_blank"><img src="w3images/twitter.png"></a>
+		<a href="https://www.linkedin.com/" target="_blank"><img src="w3images/linkedin.png"></a>
+		<a href="mailto:enquiry@parkspot.com?Subject=Enquiry" target="_blank"><img src="w3images/email.png"></a>
+	</div>
 </footer>
+
 </div>
 
 </body>
