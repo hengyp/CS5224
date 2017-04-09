@@ -43,6 +43,15 @@ background-color: #2A3F54;
     color: #f2f2f2;
     text-align: center;
     }
+
+#googlemap {
+position: fixed;
+top: 0;
+padding: 0cm;
+width: 100%;
+height: 100%;
+background-color: #2A3F54;
+}
     
 #weather {
 	 text-align:left;
