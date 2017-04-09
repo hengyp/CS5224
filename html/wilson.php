@@ -373,8 +373,8 @@ function initMap() {
 
 				marker' . $ar3['carParkID'] . '.setMap(map);
 			
-				var contentString' . $ar3['carParkID'] . '=\'<div style="color:#000000"><h1>' . $carPark .'</h1><h3>Lots available =' . $ar3["lots"] .'</h3><h3>Price = $' . $ar3["price"] . '</h3><h3>' . $ar3["carParkOwner"] . 
-				'</h3> <p><a href="booking.php?carpark_id=' . $ar3['carParkID'] . '&carpark=' . $carPark .
+				var contentString' . $ar3['carParkID'] . '=\'<div style="color:#591515"><h3>' . $carPark .'</h3><h4>Lots available =' . $ar3["lots"] .'</h4><h4>Price = $' . $ar3["price"] . '</h4><h4>' . $ar3["carParkOwner"] . 
+				'</h4> <p><a href="booking.php?carpark_id=' . $ar3['carParkID'] . '&carpark=' . $carPark .
 				'"><b>Book Now</b></a></p><p><a href="https://maps.google.com/maps?q=' .$ar3['latitude']. ',' . $ar3['longitude'] . 
 				'"><b>Directions</b></a></p><p><a href="https://maps.google.com/maps?q=&layer=c&cbll='. $ar3['latitude'] . ',' .$ar3['longitude'] .
 				'"><b>Street view</b></p></div>\';
